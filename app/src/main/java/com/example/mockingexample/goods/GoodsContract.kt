@@ -1,10 +1,9 @@
 package com.example.mockingexample.goods
 
 
-import android.widget.Button
 import com.example.mockingexample.base.BasePresenter
 import com.example.mockingexample.base.BaseView
-import com.example.mockingexample.goods.Goods
+import com.example.mockingexample.data.Goods
 
 interface GoodsContract {
 

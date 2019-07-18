@@ -1,15 +1,11 @@
 package com.example.mockingexample.goods
 
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import com.example.mockingexample.R
 import com.example.mockingexample.base.BaseActivity
-import com.example.mockingexample.goods.Goods
+import com.example.mockingexample.data.Goods
 import kotlinx.android.synthetic.main.activity_goods.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 class GoodsActivity : BaseActivity<GoodsContract.View, GoodsContract.Presenter>(), GoodsContract.View {
 

@@ -1,9 +1,7 @@
 package com.example.mockingexample.goods
 
 import android.os.AsyncTask
-import com.example.mockingexample.goods.Goods
-import com.example.mockingexample.goods.GoodsContract
-import com.example.mockingexample.goods.GoodsModel
+import com.example.mockingexample.data.Goods
 import kotlinx.coroutines.*
 
 class GoodsPresenter : GoodsContract.Presenter() {
@@ -54,14 +52,12 @@ class GoodsPresenter : GoodsContract.Presenter() {
         showLoading()
         showToast("请耐心等待")
         showToast("请耐心等待")
-        GlobalScope.launch {
-            withContext(Dispatchers.IO) {
-                delay(2000)
-                val result = model.getGoods(goodsId)
-                withContext(Dispatchers.Main) {
-                    view.onGoodsRequested(result)
-                    hideLoading()
-                }
+        GlobalScope.launch(Dispatchers.IO) {
+            delay(2000)
+            val result = model.getGoods(goodsId)
+            withContext(Dispatchers.Main) {
+                view.onGoodsRequested(result)
+                hideLoading()
             }
         }
     }

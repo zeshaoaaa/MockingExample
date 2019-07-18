@@ -1,4 +1,4 @@
-package com.example.mockingexample.goods;
+package com.example.mockingexample.data;
 
 public class Goods {
 

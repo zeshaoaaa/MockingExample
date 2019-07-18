@@ -1,6 +1,6 @@
 package com.example.mockingexample.goods;
 
-import org.jetbrains.annotations.NotNull;
+import com.example.mockingexample.data.Goods;
 
 import java.util.ArrayList;
 import java.util.List;

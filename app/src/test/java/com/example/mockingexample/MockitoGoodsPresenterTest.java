@@ -1,6 +1,6 @@
 package com.example.mockingexample;
 
-import com.example.mockingexample.goods.Goods;
+import com.example.mockingexample.data.Goods;
 import com.example.mockingexample.goods.GoodsContract;
 import com.example.mockingexample.goods.GoodsPresenter;
 import org.junit.Before;
